@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ButtonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center" >
+
+        <ImageView
+            android:id="@+id/ButtonGV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/GridButtonTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/TransBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#29000000" 
+        android:visibility="gone">
+    </FrameLayout>    -->
+
+</LinearLayout>

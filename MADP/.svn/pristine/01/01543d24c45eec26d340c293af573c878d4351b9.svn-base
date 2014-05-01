@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+       xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#cacaca"
+                android:gravity="center"
+                android:text="A.B. GEMS"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/topButtonLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bookmark_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/visited_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/locate_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/getDirection_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/locationText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="#fe6600" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/locationValueFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_speaker" >
+
+                <TextView
+                    android:id="@+id/locationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="Hall 1(1H001 111)"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/location_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="#00000000" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/exhibitorName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mr. Vikas Agarwal"
+                android:textColor="#fe6600" />
+
+            <LinearLayout
+                android:id="@+id/exhibitorDetailLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_speaker"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/phoneFrame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/phoneText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Phone"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/phoneValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="9929220691" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#cacaca" />
+
+                <FrameLayout
+                    android:id="@+id/eamilFrame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/eamilText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Email"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/eamilValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="vkagarwal129@gmail.com" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#cacaca" />
+
+                <FrameLayout
+                    android:id="@+id/addressFrame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/addressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:text="Address"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/addressValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:ellipsize="end"
+                        android:maxLines="3" />
+                </FrameLayout>
+            </LinearLayout>
+
+            
+                <TextView
+                android:id="@+id/productCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fe6600" />
+            
+            <LinearLayout
+                android:id="@+id/noteTextLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Addnote_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/noteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:textColor="#fe6600" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notesLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_speaker"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appoinmentTextLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Addappoinment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/appoinmentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appoinment"
+                    android:textColor="#fe6600" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appoinmentsLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_speaker"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>

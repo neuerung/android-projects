@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainFrame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <TableRow
+        android:id="@+id/Row"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@+id/LinHall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/hall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/sep"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/LinHead"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="sdfds"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@null"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="sdfds"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/LinFav"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" >
+
+            <ImageView
+                android:id="@+id/Favourites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="2dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/Visited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="2dp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>

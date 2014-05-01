@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScreenLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top|left" android:background="#ffffff">
+
+    
+    <LinearLayout
+        android:id="@+id/LLLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/LLTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLMiddle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLLayoutCopy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/LLTopCopy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLMiddleCopy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLBottomCopy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/LLLayoutMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|right"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/MenuButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:onClick="TransparentMenuBtnOnclick"
+            android:visibility="gone" >
+
+            <!-- #29000000  For Light and for Dark #cc000000 -->
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/LLTopMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/LLMiddleMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/LLBottomMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" >
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

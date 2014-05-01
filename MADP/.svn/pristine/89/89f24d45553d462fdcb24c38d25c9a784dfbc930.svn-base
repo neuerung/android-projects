@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LLLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" 
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/clientLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#484848" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical" />
+
+            <TextView
+                android:id="@+id/headertext"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Select Event"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/eventListsearch_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:hint="Search Event"
+            android:singleLine="true" />
+
+        <ListView
+            android:id="@+id/eventList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventListsearch_et"
+            android:background="#ffffff" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/hideListClick"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#cacaca"
+            android:visibility="gone" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scandialogLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/scandialogLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#000000" >
+
+                <!--
+            <FrameLayout
+                android:id="@+id/scanheaderLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#484848" >
+
+                <TextView
+                    android:id="@+id/scanheadertext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Enter Client Code"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+                -->
+
+                <EditText
+                    android:id="@+id/clientcode_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Enter Event Code"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:id="@+id/separtorll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clientcode_et"
+                    android:layout_centerHorizontal="true" >
+
+                    <TextView
+                        android:id="@+id/separtor_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:layout_centerInParent="true"
+                        android:background="#cacaca" />
+
+                    <TextView
+                        android:id="@+id/separtor_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/white"
+                        android:text="Or"
+                        android:textColor="#ababab" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/QRcode_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/separtorll"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/LLTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/LLMiddle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/LLBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+</LinearLayout>

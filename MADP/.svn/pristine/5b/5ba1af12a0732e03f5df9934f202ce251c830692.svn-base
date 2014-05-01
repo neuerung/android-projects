@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Screens>
+  <!--  Splash Screen -->
+  <Screen Number="-1" Type="" bgcolor="" bgImage="">
+    <Top rows="" columns="" width="100" height="19.7" Type="4" Link="" bgcolor="" bgImage="">
+      <Element maxline="" Subtitle="" font="" leftscalefactor="" rightscalefactor="" midscalefactor="" selectedBgcolor="" bgcolor="" txtColor="" Number="" Code="" Type="" Title="" Bitmap=""   OnClick=""   width="100" height="100" left="" right="" bottom="" leftper="" rightper="" middleper="" distleft="" disttop="" mailto="" body="" subject="" leftClick="" rightClick="" rightbgColor="" leftbgColor="" midbgColor="" rightbgImage="" leftbgImage="" midbgImage="" />
+    </Top>
+  <Middle rows="" columns="" width="100" height="57.3" Type="4" Link="" bgcolor="" bgImage="">
+      <Element maxline="" Subtitle="" font="" leftscalefactor="" rightscalefactor="" midscalefactor="" selectedBgcolor="" bgcolor="" txtColor="" Number="" Code="" Type="" Title="" Bitmap="splash1"   OnClick=""   width="100" height="100" left="" right="" bottom="" leftper="" rightper="" middleper="" distleft="" disttop="" mailto="" body="" subject="" leftClick="" rightClick="" rightbgColor="" leftbgColor="" midbgColor="" rightbgImage="" leftbgImage="" midbgImage="" />
+    </Middle>
+  <Bottom rows="" columns="" width="100" height="23" Type="4" Link="" bgcolor="" bgImage="">
+      <Element maxline="" Subtitle="" font="" leftscalefactor="" rightscalefactor="" midscalefactor="" selectedBgcolor="" bgcolor="" txtColor="" Number="" Code="" Type="" Title="" Bitmap="splash2"   OnClick=""   width="100" height="100" left="" right="" bottom="" leftper="" rightper="" middleper="" distleft="" disttop="" mailto="" body="" subject="" leftClick="" rightClick="" rightbgColor="" leftbgColor="" midbgColor="" rightbgImage="" leftbgImage="" midbgImage="" />
+    </Bottom>
+ </Screen>
+</Screens>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top|left" >
+
+    <LinearLayout
+        android:id="@+id/GoogleLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|left"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/LLTopGoogle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLMiddleGoogle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LLBottomGoogle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+        </FrameLayout>
+    </LinearLayout>
+    
+     <FrameLayout
+        android:id="@+id/LLLayoutMenuGoogle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|right"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/MenuButtonGoogle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:onClick="TransparentMenuBtnOnclick"
+            android:visibility="gone" >
+
+            <!-- #29000000  For Light and for Dark #cc000000 -->
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMenuGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/LLTopMenuGoogle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/LLMiddleMenuGoogle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/LLBottomMenuGoogle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" >
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
